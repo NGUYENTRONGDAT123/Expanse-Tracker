@@ -13,5 +13,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.14" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="20.4.0.51" />
   </ItemGroup>
 </Project>
