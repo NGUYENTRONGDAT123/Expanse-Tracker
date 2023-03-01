@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  app:
+    image: expanse_tracker:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__DevConnection: "Server=db,1433;Database=TransactionDB;User=SA;Password=trongdat@203;MultipleActiveResultSets=True;"
+    depends_on:
+      - db
+
+  db:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "trongdat@203"
+    ports:
+      - "1433:1433"
