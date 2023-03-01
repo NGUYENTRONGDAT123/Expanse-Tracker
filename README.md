@@ -1,6 +1,19 @@
 # Expanse-Tracker
 
-An Expanse Tracker application using dotnet6, ejs 
+An Expanse Tracker application using dotnet6, ej2-syncfusion, azure sql edge as database
+
+## Setup
+
+### Prequesite
+- Docker Engine
+
+### Installation
+
+- Go to root folder `expanse-tracker`
+- Setup docker images and run the containers
+```
+docker-compose up
+```
 
 ## Dashboard
 <img width="1351" alt="Screenshot 2023-03-01 at 1 23 43 pm" src="https://user-images.githubusercontent.com/49813515/222037098-833cd7a5-20ac-4659-bb1a-1a2303334f66.png">
